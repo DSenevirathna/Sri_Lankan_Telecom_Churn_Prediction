@@ -1,0 +1,18 @@
+{
+    "project": "Sri Lankan Telecom Customer Churn Prediction",
+    "dataset": "lasaljaywardena/real-world-churn",
+    "observation_window": "Day_1 to Day_28",
+    "target": "churn",
+    "models": [
+        "Random Forest",
+        "AdaBoost",
+        "Gradient Boosting",
+        "Stacking"
+    ],
+    "number_of_features": 156,
+    "training_customers": 52004,
+    "testing_customers": 13001,
+    "validation_split": 0.2,
+    "random_state": 42,
+    "classification_threshold": 0.5
+}

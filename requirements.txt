@@ -1,0 +1,9 @@
+numpy<2.5
+pandas==2.2.3
+pyarrow
+scikit-learn
+joblib
+matplotlib
+seaborn
+plotly==7.1.0
+streamlit

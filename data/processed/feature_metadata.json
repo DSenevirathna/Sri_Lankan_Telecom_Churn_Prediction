@@ -1,0 +1,31 @@
+{
+    "project": "Sri Lankan Telecom Customer Churn Prediction",
+    "dataset": "lasaljaywardena/real-world-churn",
+    "observation_days_used": "Day_1 to Day_28",
+    "total_customers": 65005,
+    "training_customers": 52004,
+    "testing_customers": 13001,
+    "usage_categories": 12,
+    "features_per_customer": 156,
+    "total_training_features": 156,
+    "target_column": "churn",
+    "target_classes": [
+        0,
+        1
+    ],
+    "feature_engineering": [
+        "total_28d",
+        "mean_daily",
+        "std_daily",
+        "max_daily",
+        "min_daily",
+        "active_days",
+        "zero_days",
+        "first_14d",
+        "last_14d",
+        "week_1",
+        "week_2",
+        "week_3",
+        "week_4"
+    ]
+}
