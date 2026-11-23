@@ -276,13 +276,13 @@ elif page == "Dataset Analysis":
                 hole=0.4
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
             st.subheader("Training Dataset Statistics")
 
             st.dataframe(
                 train_labels.describe(),
-                use_container_width=True
+                width="stretch"
             )
 
     if test_labels_path.exists():
@@ -297,7 +297,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             test_labels.head(10),
-            use_container_width=True
+            width="stretch"
         )
 
     else:
@@ -325,7 +325,7 @@ elif page == "Model Comparison":
 
         st.dataframe(
             comparison,
-            use_container_width=True,
+            width="stretch",
             hide_index=True
         )
 
@@ -374,7 +374,7 @@ elif page == "Model Comparison":
                 yaxis_title="Score"
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
             st.subheader("Understanding the Metrics")
 
@@ -432,7 +432,7 @@ elif page == "Model Evaluation":
 
         st.dataframe(
             prediction_data.head(20),
-            use_container_width=True
+            width="stretch"
         )
 
         actual_col = find_column(
@@ -469,7 +469,7 @@ elif page == "Model Evaluation":
                 title="Confusion Matrix"
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
             tn, fp, fn, tp = cm.ravel()
 
@@ -551,11 +551,11 @@ elif page == "Feature Importance":
                 title="Top 15 Important Features"
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
 
             st.dataframe(
                 importance_data,
-                use_container_width=True
+                width="stretch"
             )
 
         else:
